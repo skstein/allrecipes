@@ -22,7 +22,7 @@ chromedriver = '/usr/local/bin/chromedriver'
 os.environ['webdriver.chrome.driver'] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 
-pages = ['https://allrecipes.com/recipes/17562/dinner/?page=' + str(p) for p in range(5,6)]
+pages = ['https://allrecipes.com/recipes/17562/dinner/?page=' + str(p) for p in range(9,10)]
 
 for j in pages:
 
