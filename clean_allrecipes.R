@@ -2,7 +2,7 @@ setwd("~/Desktop/allrecipes")
 
 # Load data
 data <- read.table("dinner1.txt", header=FALSE, quote="", sep="|")
-files <- paste("dinner", 2:7, ".txt", sep="")
+files <- paste("dinner", 2:12, ".txt", sep="")
 for (f in files) {
   temp <- read.table(f, header=FALSE, quote="", sep="|")
   data <- rbind(data, temp)
