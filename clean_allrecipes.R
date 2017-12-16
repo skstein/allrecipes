@@ -2,7 +2,7 @@ setwd("~/Desktop/allrecipes")
 
 # Load data
 data <- read.table("dinner1.txt", header=FALSE, quote="", sep="|")
-files <- paste("dinner", 2:24, ".txt", sep="")
+files <- paste("dinner", 2:33, ".txt", sep="")
 for (f in files) {
   temp <- read.table(f, header=FALSE, quote="", sep="|")
   temp$V1 <- as.factor(temp$V1)
